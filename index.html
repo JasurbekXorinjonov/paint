@@ -8,6 +8,66 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <section class="drawin_board">
+        <canvas></canvas>
+      </section>
+      <section class="tools_board">
+        <div class="row">
+          <label class="title">SHAKLLAR</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="./icons/rectangle.svg" alt="rectangle" />
+              <span>TORTBURCHAK</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="./icons/circle.svg" alt="circle" />
+              <span>DOIRA</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="./icons/triangle.svg" alt="triangle" />
+              <span>UCHBURCHAK</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill_color" />
+              <label for="fill_color">RANGNI TO'LDIRISH</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">SHAKLLAR</label>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+              <img src="./icons/brush.svg" alt="brush" />
+              <span>Qalam</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="./icons/eraser.svg" alt="eraser" />
+              <span>O'CHIRG'ICH</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size_slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">RANGLAR</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color_picker" value="#ffff" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear_canvas">O'CHIRSH</button>
+          <button class="save_img">SAQLASH</button>
+        </div>
+      </section>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
